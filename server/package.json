@@ -1,0 +1,22 @@
+{
+  "name": "outlook-mail-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "connect": "node scripts/mailbox.js connect",
+    "disconnect": "node scripts/mailbox.js disconnect"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^3.8.10",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "mongoose": "^8.24.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
